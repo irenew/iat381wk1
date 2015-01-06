@@ -59,14 +59,14 @@
 				</div>
 		</div>	
 		<script type="text/javascript">
-			jQuery(document).ready(function ($) {
+			
 				$('#myTab a').click(function (e){
 					e.preventDefault()
 					$(this).tab('show')
-					$('myTab a[href="#profile"]').tab('show')
-					$('myTab a[href="#home"]').tab('hide')
+					
+					
 				})
-			   });	
+			  	$('#myTab a:last').tab('show');
 		</script>
 		
 		<script src='js/juqery.js'></script>
