@@ -59,20 +59,16 @@
 				</div>
 		</div>	
 		<script type="text/javascript">
-
-			$('#myTab a').click(function (e){
-				e.preventDefault()
-				$(this).tab('show')
-				$('myTab a[href="#profile"]').tab('show')
-				$('myTab a[href="#home"]').tab('hide')
-			})
-			
+			jQuery(document).ready(function ($) {
+				$('#myTab a').click(function (e){
+					e.preventDefault()
+					$(this).tab('show')
+					$('myTab a[href="#profile"]').tab('show')
+					$('myTab a[href="#home"]').tab('hide')
+				})
+			   });	
 		</script>
-		<script type="text/javascript">
-		    jQuery(document).ready(function ($) {
-		        $('#myTab').tab();
-		    });
-		</script> 
+		
 		<script src='js/juqery.js'></script>
 		<script src='dist/js/bootstrap.js'></script>
 	</body>
