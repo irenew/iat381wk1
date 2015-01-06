@@ -36,18 +36,35 @@
 		<!-- Tab content-->
 		<div class="tab-content">
 				<div role="tabpanel" class="tab-pane active" id="home"> 
-					<p> Welcome to the home tab content</p>
+					<div class='row'>
+
+						<div class='col-md-3'>
+							<h2>Home</h2>
+							<p> Welcome to the home tab content</p>
+						</div>
+					
+					</div>
+					
 				</div>
 				<div role="tabpanel" class="tab-pane" id="profile"> 
-					<p> Hello, my name is Irene </p>
+					<div class='row'>
+
+						<div class='col-md-3'>
+							<h2>Profile</h2>
+							<p> Hello, my name is Irene </p>
+						</div>
+					
+					</div>
+					
 				</div>
 		</div>	
 		<script type="text/javascript">
 			$('#myTab a').click(function (e){
 				e.preventDefulat()
 				$(this).tab('show')
-				$('myTab' a[href="#profile"]).tab('show')
+				
 			})
+			$('myTab' a[href="#profile"]).tab('show')
 		</script>
 		<script src='js/juqery.js'></script>
 		<script src='dist/js/bootstrap.js'></script>
