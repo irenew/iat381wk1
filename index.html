@@ -59,10 +59,12 @@
 				</div>
 		</div>	
 		<script type="text/javascript">
+
 			$('#myTab a').click(function (e){
 				e.preventDefault()
 				$(this).tab('show')
 				$('myTab a[href="#profile"]').tab('show')
+				$('myTab a[href="#home"]').tab('hide')
 			})
 			
 		</script>
